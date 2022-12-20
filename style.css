@@ -20,7 +20,7 @@ body {
 .mainHeader {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -152,7 +152,7 @@ button {
   cursor: pointer;
   position: absolute;
   bottom: 50px;
-  right: 5px;
+  right: 10px;
 }
 h2::after {
   content: "TOP";
@@ -218,7 +218,7 @@ h2::after {
   display: block;
 }
 
-.row {
+/*.row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -229,9 +229,23 @@ article {
   margin-bottom: 0;
 }
 aside {
-  /* DEFAULT 
-/flex-grow: 0; 
- flex-shrink: 1; 
-flex-basis: auto; */
+
   flex: 0 0 300px;
+}*/
+/* GRID */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.mainHeader {
+  grid-column: 1/-1;
+}
+
+footer {
+  background-color: #1098ad;
+  grid-column: 1/-1;
 }

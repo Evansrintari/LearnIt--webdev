@@ -11,6 +11,10 @@ body {
   width: 817px;
   margin: 50px auto;
   position: relative;
+  /* GRID */
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  gap: 40px;
 }
 .product-title {
   text-transform: uppercase;
@@ -18,6 +22,7 @@ body {
   font-weight: bold;
   text-align: center;
   background-color: #f7f7f7;
+  grid-column: 1/-1;
 }
 .fee {
   font-weight: bold;
@@ -99,6 +104,7 @@ body {
   cursor: pointer;
   padding: 15px;
   width: 100%;
+  grid-column: 1/-1;
 }
 
 .add-cart:hover {
@@ -131,14 +137,8 @@ body {
 }
 .product-price {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   margin-bottom: 20px;
-}
-
-.column {
-  display: flex;
-  gap: 40px;
 }
 
 .product-detail {
